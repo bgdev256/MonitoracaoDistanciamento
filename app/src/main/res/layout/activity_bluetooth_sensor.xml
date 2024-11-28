@@ -26,16 +26,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblTitleBthSensor"
-        app:srcCompat="@drawable/imgbthconect"
-        tools:layout_editor_absoluteX="186dp" />
+        app:srcCompat="@drawable/imgbthconect" />
 
     <TextView
         android:id="@+id/lblStatusConect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/lblStatusConectado"
+        android:text="@string/lblStatusConect"
         android:textColor="#022E4B"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -48,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
-        android:text="Celular1"
+        android:text="@string/lblNameBthHost"
         android:textColor="#022E4B"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -61,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:text="Celular2"
+        android:text="@string/lblNameBthSlave"
         android:textColor="#022E4B"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -89,7 +91,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/shape_button_distance"
         android:fontFamily="serif"
-        android:text="10"
+        android:text="@string/btnDistance"
         android:textAlignment="center"
         android:textColor="#022E4B"
         android:textSize="110sp"
@@ -113,14 +115,14 @@
         app:layout_constraintTop_toBottomOf="@+id/btnDistance" />
 
     <Button
-        android:id="@+id/btnConectar"
+        android:id="@+id/btnConect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/shape_button_start"
         android:paddingLeft="60dp"
         android:paddingRight="60dp"
-        android:text="@string/btnConectar"
+        android:text="@string/btnConect"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/btnStopAlarm"
@@ -143,11 +145,12 @@
         app:layout_constraintTop_toBottomOf="@+id/lblInfo2" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/imgBtnConfig"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:background="@null"
+        android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="@+id/lblTitleBthSensor"
         app:layout_constraintStart_toEndOf="@+id/lblTitleBthSensor"
         app:layout_constraintTop_toTopOf="@+id/lblTitleBthSensor"
