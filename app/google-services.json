@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "669751386083",
+    "firebase_url": "https://monitora-d325d-default-rtdb.firebaseio.com",
+    "project_id": "monitora-d325d",
+    "storage_bucket": "monitora-d325d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669751386083:android:be9263ff56043ed2f0cad6",
+        "android_client_info": {
+          "package_name": "com.example.monitoracaodistanciamento"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPfUd2AuAN6yjhCY0XMFwYj6tluWd_Kuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
