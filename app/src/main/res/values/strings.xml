@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MonitoracaoDistanciamento</string>
+    <string name="hintLogin">Email ou CPF</string>
+    <string name="hintPwd">Senha</string>
+    <string name="hintForgot">Esqueceu a senha?</string>
+    <string name="lblStart">Iniciar</string>
+    <string name="lblRegister">Cadastrar-se</string>
+    <string name="lblTitle2">Dados do responsável (Celular 1)</string>
+    <string name="hintName">Nome completo</string>
+    <string name="hintCPF">CPF</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintCelular">Celular</string>
+    <string name="hintPwdConfirm">Confirme a Senha</string>
+    <string name="lblBltSensor">Sensor de distância</string>
+    <string name="lblStatusConectado">Conectado</string>
+    <string name="lblStatusDesconectado">Desconectado</string>
+    <string name="lblInfo">Distância em metros para acionar alarme:</string>
+    <string name="lblInfo2">Clique em cima do número para alterar o distanciamento.</string>
+    <string name="btnStopAlarm">Parar som</string>
+    <string name="btnConectar">Conectar</string>
+    <string name="lblForgotPwd">Esqueci minha senha</string>
+    <string name="lblEmailSendCode">Confirme o email para envio do código de segurança:</string>
+    <string name="btnSendCode">"Enviar"</string>
+</resources>

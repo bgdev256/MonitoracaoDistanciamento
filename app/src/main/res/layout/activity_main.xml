@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imglogo" />
+
+    <EditText
+        android:id="@+id/txtSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#022E4B"
+        android:ems="10"
+        android:hint="@string/hintPwd"
+        android:inputType="text"
+        android:lineSpacingExtra="12sp"
+        android:textAlignment="viewStart"
+        android:textColorHint="#054D7F"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#022E4B"
+        android:ems="10"
+        android:hint="@string/hintLogin"
+        android:inputType="text"
+        android:lineSpacingExtra="12sp"
+        android:textAlignment="viewStart"
+        android:textColorHint="#054D7F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
+
+    <Button
+        android:id="@+id/btnForgot"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_margin="0dp"
+        android:background="#009C27B0"
+        android:backgroundTint="#00000000"
+        android:gravity="top"
+        android:padding="0dp"
+        android:text="@string/hintForgot"
+        android:textColor="#022E4B"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/txtSenha"
+        app:layout_constraintTop_toBottomOf="@+id/txtSenha" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_button_register"
+        android:padding="15dp"
+        android:text="@string/lblRegister"
+        android:textColor="#022E4B"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister2"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister2"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister2" />
+
+    <Button
+        android:id="@+id/btnRegister2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_button_start"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="@string/lblStart"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnForgot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

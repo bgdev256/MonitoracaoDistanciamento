@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <Button
+        android:id="@+id/btnRegister2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_button_start"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="@string/lblRegister"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtPwdConfirm"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/txtPwdConfirm" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#022E4B"
+        android:ems="10"
+        android:hint="@string/hintName"
+        android:inputType="text"
+        android:lineSpacingExtra="12sp"
+        android:textAlignment="viewStart"
+        android:textColorHint="#054D7F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitle2" />
+
+    <EditText
+        android:id="@+id/txtCpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#022E4B"
+        android:ems="10"
+        android:hint="@string/hintCPF"
+        android:inputType="text"
+        android:lineSpacingExtra="12sp"
+        android:textAlignment="viewStart"
+        android:textColorHint="#054D7F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtName"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#022E4B"
+        android:ems="10"
+        android:hint="@string/hintEmail"
+        android:inputType="text"
+        android:lineSpacingExtra="12sp"
+        android:textAlignment="viewStart"
+        android:textColorHint="#054D7F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCpf"
+        app:layout_constraintStart_toStartOf="@+id/txtCpf"
+        app:layout_constraintTop_toBottomOf="@+id/txtCpf" />
+
+    <EditText
+        android:id="@+id/txtCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#022E4B"
+        android:ems="10"
+        android:hint="@string/hintCelular"
+        android:inputType="text"
+        android:lineSpacingExtra="12sp"
+        android:textAlignment="viewStart"
+        android:textColorHint="#054D7F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmail"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <EditText
+        android:id="@+id/txtPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#022E4B"
+        android:ems="10"
+        android:hint="@string/hintPwd"
+        android:inputType="text"
+        android:lineSpacingExtra="12sp"
+        android:textAlignment="viewStart"
+        android:textColorHint="#054D7F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCelular"
+        app:layout_constraintStart_toStartOf="@+id/txtCelular"
+        app:layout_constraintTop_toBottomOf="@+id/txtCelular" />
+
+    <EditText
+        android:id="@+id/txtPwdConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#022E4B"
+        android:ems="10"
+        android:hint="@string/hintPwdConfirm"
+        android:inputType="text"
+        android:lineSpacingExtra="12sp"
+        android:textAlignment="viewStart"
+        android:textColorHint="#054D7F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtPwd"
+        app:layout_constraintStart_toStartOf="@+id/txtPwd"
+        app:layout_constraintTop_toBottomOf="@+id/txtPwd" />
+
+    <TextView
+        android:id="@+id/lblTitleRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/lblRegister"
+        android:textAlignment="center"
+        android:textColor="#054D7F"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/lblTitle2"
+        android:textColor="#022E4B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitleRegister" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRegister2"
+        app:layout_constraintStart_toStartOf="@+id/txtPwdConfirm"
+        app:srcCompat="@drawable/imgback" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

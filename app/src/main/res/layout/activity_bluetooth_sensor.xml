@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothSensor">
+
+    <TextView
+        android:id="@+id/lblTitleBthSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/lblBltSensor"
+        android:textAlignment="center"
+        android:textColor="#054D7F"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgStatusConect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitleBthSensor"
+        app:srcCompat="@drawable/imgbthconect"
+        tools:layout_editor_absoluteX="186dp" />
+
+    <TextView
+        android:id="@+id/lblStatusConect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/lblStatusConectado"
+        android:textColor="#022E4B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusConect"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusConect"
+        app:layout_constraintTop_toBottomOf="@+id/imgStatusConect" />
+
+    <TextView
+        android:id="@+id/lblNameBthHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:text="Celular1"
+        android:textColor="#022E4B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusConect"
+        app:layout_constraintEnd_toStartOf="@+id/imgStatusConect"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusConect" />
+
+    <TextView
+        android:id="@+id/lblNameBthSlave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Celular2"
+        android:textColor="#022E4B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusConect"
+        app:layout_constraintStart_toEndOf="@+id/imgStatusConect"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusConect" />
+
+    <TextView
+        android:id="@+id/lblInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/lblInfo"
+        android:textColor="#022E4B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblStatusConect" />
+
+    <Button
+        android:id="@+id/btnDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_button_distance"
+        android:fontFamily="serif"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="#022E4B"
+        android:textSize="110sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblInfo" />
+
+    <TextView
+        android:id="@+id/lblInfo2"
+        android:layout_width="284dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/lblInfo2"
+        android:textAlignment="center"
+        android:textColor="#022E4B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnDistance"
+        app:layout_constraintStart_toStartOf="@+id/btnDistance"
+        app:layout_constraintTop_toBottomOf="@+id/btnDistance" />
+
+    <Button
+        android:id="@+id/btnConectar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_button_start"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="@string/btnConectar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnStopAlarm"
+        app:layout_constraintStart_toStartOf="@+id/btnStopAlarm"
+        app:layout_constraintTop_toBottomOf="@+id/btnStopAlarm" />
+
+    <Button
+        android:id="@+id/btnStopAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_button_start"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="@string/btnStopAlarm"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/lblInfo2"
+        app:layout_constraintStart_toStartOf="@+id/lblInfo2"
+        app:layout_constraintTop_toBottomOf="@+id/lblInfo2" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/lblTitleBthSensor"
+        app:layout_constraintStart_toEndOf="@+id/lblTitleBthSensor"
+        app:layout_constraintTop_toTopOf="@+id/lblTitleBthSensor"
+        app:srcCompat="@drawable/settings" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
